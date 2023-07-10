@@ -318,9 +318,11 @@ h4.h4-lan {
   margin: 15px;
   text-align: center;
 }
-.tex-ser {
-    text-align: center;
+.text-ser:hover{
+  box-shadow: 11px 2px 10px red !important
+
 }
+
 h5.h5-ser {
     color: #eee;
     font-size: 26px;
