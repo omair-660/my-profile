@@ -971,7 +971,7 @@ nav a::after{
 }
 
   
-.work h3{
+  .work h3{
 text-align:center;
 padding-bottom:30px;
 color:darkred;
@@ -979,7 +979,22 @@ font-size:23px;
 letter-spacing:1px;
 position:relative;
 width:fit-content;
-margin:0 auto;
+margin:0 auto; 
+animation-iteration-count:infinite;
+animation-name:tobo;
+animation-duration:2s;
+animation-timing-function:ease-in-out;
+animation-direction:alternate;
+}
+@keyframes tobo{
+to{
+padding-right:60px;
+color:#44aec8;
+}
+from{
+padding-left:60px;
+color:darkred;
+}
 }
 
  .work h3::after{
