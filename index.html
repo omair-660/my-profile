@@ -188,34 +188,7 @@
     <a href="https://omair-660.github.io/my-profile/" target="_blank">omair mohammed_عمير محمد</a> &copy; </p>
 </footer>
 
-    
-  <form action="send_email.php" method="post">
-    <label for="name">الاسم:</label>
-    <input type="text" id="name" name="name" required><br><br>
 
-    <label for="email">البريد الإلكتروني:</label>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">الرسالة:</label>
-    <textarea id="message" name="message" required></textarea><br><br>
-
-    <input type="submit" value="إرسال">
-  </form>
-  <?php
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $to =  elrosyomair@gmail.com ; // استبدل هذا بعنوان البريد الإلكتروني الخاص بك
-  
-  $name = $_POST[ name ];
-  $email = $_POST[ email ];
-  $message = $_POST[ message ];
-  
-  $subject = "رسالة جديدة من نموذج الاتصال";
-  $messageBody = "الاسم: $name\nالبريد الإلكتروني: $email\n\n$message";
-  
-  $headers = "From: $email\r\nReply-To: $email\r\n";
-  
-  if (mail($to, $subject, $messageBody, $headers))
-  ?>
         <!--
     <div class="YouTube">
     <div class="hero">
@@ -767,6 +740,17 @@ input[type="submit"]:hover{
 .contact-text {
 text-align: center;
 }
+  .contact-text{
+    color: #44aec8;
+    font-size: 19px;
+    font-weight: 700;
+    transition:1s;
+  }
+  .contact-text:hover{
+
+    transition: .5s;
+  color: #0a6ebd;
+  }
 ::placeholder{
   color: #b3e5fc;
   font-size: 13px
