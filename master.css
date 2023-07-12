@@ -25,6 +25,35 @@ html{
 
 }
 
+  .stt{
+background:black;
+padding-top:20px;
+}
+.stt p{
+color:#b3e5fc;
+text-align:center;
+font-size:20px;
+font-weight:900;
+font-style:italic;
+opacity:0.8;
+letter-spacing:2px;
+padding-top:8px;
+}
+.stt img{
+  display:flex;
+  justify-content:center;
+  margin:0 auto;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 h3 {
     color: aliceblue;
 }
@@ -241,7 +270,7 @@ img.icon-down {
 }
 
 .landing {
-    background-color: rgba(0,0,0,0.5);
+    background-image: url("PicsArt_06-17-02.12.03.jpg");
     width: 100%;
     height: 87vh;
     background-position: center;
@@ -271,7 +300,7 @@ h2.h2-lan {
     letter-spacing: 0;
     /* padding-top: 11px; */
     /* padding-bottom: 16px; */
-    width: 304px;
+    width: 320px;
     white-space: nowrap;
     border-right: 2px solid #44aec8;
     animation: text 4s steps(16) infinite;
@@ -317,9 +346,7 @@ h4.h4-lan {
   border-radius: 20px;
   margin: 15px;
   text-align: center;
-}
-.text-ser:hover{
-  box-shadow: 11px 2px 10px red !important
+  box-shadow: 1px 1px 15px #b3e5fc ;
 
 }
 
@@ -440,6 +467,17 @@ input[type="submit"]:hover{
 .contact-text {
 text-align: center;
 }
+  .contact-text a{
+    color: #44aec8;
+    font-size: 19px;
+    font-weight: 700;
+    transition:1s;
+  }
+  .contact-text a:hover{
+
+    transition: .5s;
+  color: #0a6ebd;
+  }
 ::placeholder{
   color: #b3e5fc;
   font-size: 13px
@@ -496,9 +534,14 @@ footer p:nth-child(2) {
     grid-template-columns: repeat(3,1fr);
     grid-row-columns: repeat(2,1fr);
     margin-right: 30px;
+    align-items:center;
   }
   nav{
     margin-left: 0;
+  }
+  nav ul li a {
+   font-size:14px:
+
   }
   li {
     margin-left: 0;
@@ -522,8 +565,8 @@ h4.h4-lan {
   margin-left: 0;
 }
 img.img-about {
-  width: 261px;
-  height: 305px;
+  width: 80%;
+  height: 100%;
   margin-bottom: 40px;
 }
 .contanir {
@@ -597,6 +640,11 @@ nav a::after{
     width: 100%;
     height: 187px;
 }
+  .text-work:hover img{
+    transform:rotate(2deg) scale(0.9);
+    overflow:hidden;
+    transition:0.5s;
+  }
 .hover-te{
   width: 100%;
   height: 100%;
@@ -620,6 +668,7 @@ nav a::after{
   color: #44aec8;
   font-weight: 800;
   letter-spacing: 2px;
+  background-color:rgba(0,0,0,0.5)
 }
 .work h2 {
     margin: 10px auto;
@@ -655,10 +704,10 @@ nav a::after{
 }
 .text-work .image img {
     width: 100%;
-    height: 101px;
+    height: 125px;
 }
 .image{
-  width: 150px;
+  width: 190px;
 }
 }
 .up {
@@ -667,3 +716,40 @@ nav a::after{
     right: 2px;
     z-index: 1;
 }
+
+
+  .work h3{
+text-align:center;
+padding-bottom:30px;
+color:darkred;
+font-size:23px;
+letter-spacing:1px;
+position:relative;
+width:fit-content;
+margin:0 auto;
+animation-iteration-count:infinite;
+animation-name:tobo;
+animation-duration:2s;
+animation-timing-function:ease-in-out;
+animation-direction:alternate;
+}
+@keyframes tobo{
+to{
+padding-right:60px;
+color:#44aec8;
+}
+from{
+padding-left:60px;
+color:darkred;
+}
+}
+
+ .work h3::after{
+ content:"";
+ position:absolute;
+ bottom:10px;
+ left:0;
+ background-color:red;
+ width:100%;
+ height:2px;
+ }
